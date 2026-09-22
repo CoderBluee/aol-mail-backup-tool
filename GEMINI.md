@@ -12,9 +12,8 @@
 > 3. **📦 Shaded Fat JAR Size Gate:** Fat JAR size must be `< 75 MB` (Target: 50MB–65MB). If `> 100MB`, stop and inspect dependency tree (`mvn dependency:tree`).
 > 4. **🪟 Windows Setup EXE:** Output standard `Prism-[Tool-Name]-Setup.exe`, embedded 64-bit JRE 17/21, total installer `< 135 MB`.
 > 5. **🍎 macOS DMG Package:** Install4j project preserved in Obsidian vault (`Obsidian-Work/Package Maker/Install4j/`), output to `~/Downloads/`.
-> 6. **🔍 Full Master Checklist:** [Pre-Packaging Checklist](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/pre-packaging-checklist.md) & [Developer KT Handover Rulebook](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/engineering/dev-kt-handover-rulebook.md).
+> 6. **🔍 Full Master Rulebook:** [Desktop Packaging Master Rulebook (SSOT)](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/desktop-packaging-master-rulebook.md) & [Developer KT Handover Rulebook](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/engineering/dev-kt-handover-rulebook.md).
 <!-- SSOT_RULES_HEADER_END -->
-
 
 ## Overview
 Java 21 / JavaFX 21 Maven project. A 6-step wizard that reads Outlook PST files (and other future mailbox formats generic enough to be adapted), lets users browse/filter mailbox contents, and exports to 17 different target formats (PDF, HTML, MBOX, EML, MSG, CSV, JSON, MHTML, RTF, DOC, PST, EMLX, Office 365, Gmail, IMAP, Yahoo Mail). Uses `java-libpst` (0.9.3) for PST parsing, Apache PDFBox (2.0.31) for generating valid, page-aware PDF files, MaterialFX for UI controls, and SQLite for settings.
