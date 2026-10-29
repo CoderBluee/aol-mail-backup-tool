@@ -9,8 +9,8 @@
 > ### 🛑 Mandatory Pre-Packaging Gates (Before Building JAR / EXE / DMG):
 > 1. **💡 Universal Default Light Theme:** ALL desktop tools MUST initialize with **FlatLaf Light** (`FlatLightLaf.setup()` / `FlatMacLightLaf`) or native Light theme by default on first launch. Dark mode may only exist as an optional user toggle.
 > 2. **⌨️ 100% Keyboard Operability:** The entire conversion flow must be executable mouse-free using `Tab`/`Shift+Tab` focus cycles, `Enter`/`Space`, and arrow keys (Section 508 standard).
-> 3. **📦 Shaded Fat JAR Size Gate:** Fat JAR size must be `< 75 MB` (Target: 50MB–65MB). If `> 100MB`, stop and inspect dependency tree (`mvn dependency:tree`).
-> 4. **🪟 Windows Setup EXE:** Output standard `Prism-[Tool-Name]-Setup.exe`, embedded 64-bit JRE 17/21, total installer `< 135 MB`.
+> 3. **📦 Package Optimization:** Follow the [central dependency-optimization policy](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/desktop-packaging-master-rulebook.md#package-optimization-policy): no fixed package-size cap; exclude only proven-unused dependencies and preserve required runtime/native assets.
+> 4. **🪟 Windows Setup EXE:** Output standard `Prism-[Tool-Name]-Setup.exe`, embedded 64-bit JRE 17/21; no fixed installer-size cap; follow central dependency optimization policy.
 > 5. **🍎 macOS DMG Package:** Install4j project preserved in Obsidian vault (`Obsidian-Work/Package Maker/Install4j/`), output to `~/Downloads/`.
 > 6. **🔍 Full Master Rulebook:** [Desktop Packaging Master Rulebook (SSOT)](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/desktop-packaging-master-rulebook.md) & [Developer KT Handover Rulebook](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/engineering/dev-kt-handover-rulebook.md).
 <!-- SSOT_RULES_HEADER_END -->
